@@ -9,4 +9,6 @@ class AppAssets {
   static const String profile = 'assets/icons/Profile.svg';
   static const String wallet = 'assets/icons/Wallet.svg';
   static const String Successmark = 'assets/icons/Successmark.svg';
+  static const String profilePic = 'assets/images/omar_ahly.jpg';
+  static const String notification = 'assets/icons/Notification.svg';
 }
