@@ -7,10 +7,13 @@ class AppAssets {
   static const String home = 'assets/icons/Home.svg';
   static const String plus = 'assets/icons/Plus.svg';
   static const String profile = 'assets/icons/Profile.svg';
-  static const String wallet = 'assets/icons/Wallet.svg';
+  static const String card = 'assets/icons/card.svg';
   static const String Successmark = 'assets/icons/Successmark.svg';
   static const String profilePic = 'assets/images/omar_ahly.jpg';
   static const String notification = 'assets/icons/Notification.svg';
   static const String layer1 = 'assets/images/layer1.png';
   static const String layer2 = 'assets/images/layer2.png';
+  static const String send = 'assets/icons/Send.svg';
+  static const String wallet = 'assets/icons/Wallet.svg';
+  static const String cotact = 'assets/icons/contact.svg';
 }
