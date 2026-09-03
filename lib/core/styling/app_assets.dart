@@ -11,4 +11,6 @@ class AppAssets {
   static const String Successmark = 'assets/icons/Successmark.svg';
   static const String profilePic = 'assets/images/omar_ahly.jpg';
   static const String notification = 'assets/icons/Notification.svg';
+  static const String layer1 = 'assets/images/layer1.png';
+  static const String layer2 = 'assets/images/layer2.png';
 }

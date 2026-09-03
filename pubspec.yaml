@@ -39,6 +39,8 @@ dependencies:
   flutter_svg: ^2.3.0
   pin_code_fields: ^9.4.0
   pinput: ^6.0.2
+  carousel_slider: ^5.1.2
+  dots_indicator: ^4.0.1
 
 dev_dependencies:
   flutter_test:
