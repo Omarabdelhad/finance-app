@@ -19,4 +19,5 @@ class AppAssets {
   static const String points = 'assets/icons/3points.svg';
   static const String arrowback = 'assets/icons/arrow-back.svg';
   static const String visa = 'assets/icons/visa.svg';
+  static const String edit = 'assets/icons/Edit.svg';
 }

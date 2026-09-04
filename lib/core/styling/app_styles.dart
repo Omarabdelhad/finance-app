@@ -40,4 +40,10 @@ class AppStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.blackColor,
   );
+  static TextStyle gray14w500 = TextStyle(
+    fontFamily: AppFonts.mainFontName,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.greyColor,
+  );
 }
