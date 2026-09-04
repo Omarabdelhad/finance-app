@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:finance_app/core/styling/app_assets.dart';
 import 'package:finance_app/core/styling/app_colors.dart';
 import 'package:finance_app/features/home_page/home_page_screen.dart';
+import 'package:finance_app/features/home_page/my_cards_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,7 +16,25 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List<Widget> screens = [HomePageScreen()];
+  List<Widget> screens = [
+    HomePageScreen(),
+    Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.red,
+    ),
+    Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.yellow,
+    ),
+    MyCardsScreen(),
+    Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.black,
+    ),
+  ];
   int selectedIndex = 0;
 
   @override
@@ -38,7 +57,7 @@ class _MainScreenState extends State<MainScreen> {
           }),
           indicatorColor: AppColors.backgroundColor,
           backgroundColor: AppColors.backgroundColor,
-      
+
           labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
           destinations: [
             NavigationDestination(
@@ -141,7 +160,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
           ],
         ),
-         body: screens[selectedIndex],
+        body: screens[selectedIndex],
       ),
     );
   }
