@@ -90,7 +90,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                   buttonText: 'Verify',
                   buttonColor: AppColors.primaryColor,
                   onPressed: () {
-                    GoRouter.of(context).pushNamed(AppRoutes.changePassword);
+                    GoRouter.of(context).pushNamed(AppRoutes.createPassword);
                   },
                 ),
                 Spacer(),
