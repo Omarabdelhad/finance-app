@@ -130,6 +130,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         print(passwordControler.text);
                         print(confirmPasswordControler.text);
                         print(usernameControler.text);
+                        GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
                       }
                       ;
                     },
@@ -142,10 +143,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Center(
                     child: RichText(
                       text: TextSpan(
-                        text: 'Don\'t have an account?',
+                        text: 'Already have an account?',
                         style: AppStyles.black15Bold.copyWith(
                           color: AppColors.primaryColor,
                         ),
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = () {
+                            GoRouter.of(context).push(AppRoutes.loginScreen);
+                          },
                         children: [
                           TextSpan(
                             text: 'Login Now',

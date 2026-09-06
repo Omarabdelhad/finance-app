@@ -27,7 +27,7 @@ class OnBoredingScreen extends StatelessWidget {
             width: 331.w,
             height: 56.h,
             onPressed: () {
-              GoRouter.of(context).pushNamed(AppRoutes.mainScreen);
+              GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
             },
             buttonText: 'Login',
           ),

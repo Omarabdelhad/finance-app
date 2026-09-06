@@ -1,6 +1,8 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/styling/app_colors.dart';
 import 'package:finance_app/core/styling/app_styles.dart';
 import 'package:finance_app/core/widgets/primary_button_widget.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:finance_app/core/widgets/spacing_widget.dart';
 import 'package:finance_app/core/widgets/back_button_widget.dart';
@@ -87,7 +89,9 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                 PrimaryButtonWidget(
                   buttonText: 'Verify',
                   buttonColor: AppColors.primaryColor,
-                  onPressed: () {},
+                  onPressed: () {
+                    GoRouter.of(context).pushNamed(AppRoutes.changePassword);
+                  },
                 ),
                 Spacer(),
                 Center(

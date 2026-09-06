@@ -71,7 +71,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   onPressed: () {
                     if (formkey.currentState!.validate()) {
                       print(emailControler.text);
-                      GoRouter.of(context).push(AppRoutes.createPassword);
+                      GoRouter.of(context).push(AppRoutes.VerifyOtpScreen);
                     }
                   },
                 ),
